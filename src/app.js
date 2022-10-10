@@ -2,6 +2,7 @@ const express = require('express');
 const { conforms, result } = require('lodash');
 const lodash = require('lodash')
 const mysql = require('mysql2');
+const { PORT } = require('./config');
 
 
 const app = express();
@@ -155,6 +156,6 @@ app.post('/Editar-Receta', (req, res) =>{
     })
 });
 
-app.listen(3000, ()=>{
-    console.log('corriendo en el puerto 3000');
+app.listen(PORT, ()=>{
+    console.log(`corriendo en el puerto ${PORT}`);
 })
