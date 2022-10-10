@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= title
+    
+    style.
+        img{
+            width: 100%;
+            border-radius: 12px;
+            height: 214px;
+            object-fit: cover;
+        }
+
+        body{
+            background: #EAEFF1;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #conatiner{
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 20vh;
+        }
+
+        .card{
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 12px;
+            border: solid 1px #bac0d8;
+        }
+
+        .tag{
+            padding: 4px 8px;
+            border:  1px solid #e5eae0;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #788697;
+        }
+
+        .name{
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+
+        p{
+            font-size: 14px;
+            color: #7f8c98;
+            line-height: 150%;
+        }
+
+        button{
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            color: #0077ff;
+            background-color: #e0efff;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+        }
+
+    body
+        h1 Recetario
+        h3 Receta del dia 
+        button(type="submit" onclick="location.href='/Crear-Receta'") Crea una receta
+        br
+        button(type="submit" onclick="location.href='/Recetario'") Ver Recetario Completo
+        br
+        #container
+            .card
+                img(src='https://images.aws.nestle.recipes/resized/6112958c9af0f0a7ebadbb053faa2f73_bak---03---cherry-berry-cheesecake-657_edit_448_448.jpg', alt='receta')
+                // linkreceta
+                span.tag ingredientes
+                span.tag utencilios
+                .name nombre de la receta
+                p
+                | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed magni corrupti facere blanditiis maxime odit magnam, nisi ipsa veniam earum iste dolores
+                | atque quis perspiciatis delectus reiciendis numquam rerum provident.
+                br
+                button(type="submit") Editar
+                br
+                button(type="submit") Eliminar
+
+        
